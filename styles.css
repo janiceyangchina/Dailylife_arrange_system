@@ -1,0 +1,81 @@
+div:not(::before){
+  padding:10px;
+}
+
+.navigation-list {
+  background-image: url("./images/workspace5.jpg");
+  height: 500px;
+  padding: 0px;
+}
+
+.main-content{
+     padding: 0px;
+     width: auto;
+     float:left;
+}
+
+.side-slider{
+     width:20%;
+     float:right;
+
+}
+
+table{
+  position: relative;
+  top: 20px;
+}
+
+table, th, td {
+   border: 1px  solid grey;
+   border-collapse: collapse;
+   font-size: 12px;
+   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+table tr td:not(:first-child){
+  width: 280px;
+
+}
+table tr td:nth-child(1){
+   width: 40px;
+}
+table tbody tr{
+  height:50px;
+  padding: 5px;
+}
+
+thead tr th{
+   background-color: #19194d;
+   height: 30px;
+   color: white;
+   border-color: white;
+   font-family: Arial;
+   border-radius: 3px;
+}
+
+.save-button{
+   display: none;
+}
+.cancel-button{
+  display: none;
+}
+
+.add-row .edit-button{
+  display: none;
+}
+
+.add-row .delete-button{
+  display: none;
+}
+
+.edit-input{
+  width: 120px;
+  padding: 0;
+}
+
+.displayError{
+  color: red;
+  margin: 5px;
+  display: none;
+
+}

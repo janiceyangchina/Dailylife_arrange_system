@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+     <script type="text/javascript" src="script.js"></script>
+     <link rel="stylesheet" type="text/css" href="styles.css">
+     <title> Closet of arranged to-do list</title>
+</head>
+ 
+<body>
+<div class="navigation-list">
+   <div class="nag-header"></div>
+
+</div>
+<h1> Application Arrangement Center</h1>
+<div>
+<div class="main-content">
+    <div class="displayError">
+      <h4> Please correct the following: </h4>
+      <ul class="error-list" style="list-style-type:disc">
+         <!--<li>Morgan Stanley:  2017 Winter Technology analyst, applied time: 2016/10/13
+         <a href="https://www.morganstanley.com/people-opportunities/students-graduates/programs/">
+          career application link </a></li>
+         <li>Morgan Stanley: 2017 Full-time Technology analyst, applied time:2016/10/22</li>
+         <li>Nuance Communication: Software Engineering intern applied time: 2016/09/29, tech fair
+             <a href="http://www.nuance.com/for-developers/index.htm">
+          career application link </a></li>-->
+      </ul>
+    </div>
+     <table id="appsTable" style="100%">
+        <thead>
+         <tr>
+           <th>ID</th>
+           <th>Company </th>
+           <th>Position </th>
+           <th>Applying Method</th>
+           <th>AppliedTime</th>
+           <th>Interview Progress<!--<progress value="20" max="100" color="black"></progress>--></th>
+           <th>Actions</th>
+         </tr>
+         </thead>
+          <tbody id="apps-list"></tbody>
+          <!--<tr class="add-row">
+            <td> </td>
+            <td><input type="text" class="edit-input"/></td>
+            <td><input type="text" class="edit-input"/></td>
+            <td><input type="text" class="edit-input"/></td>
+            <td><input type="text" class="edit-input"/></td>
+            <td><input type="text" class="edit-input"/></td>
+            <td>
+              <button class="add-button">Add</button>
+              <button class="clear-button">Clear</button>
+              <button class="edit-button">Edit</button>
+              <button class="delete-button">Delete</button>
+            </td>
+         </tr> -->
+          <!--
+         <tr>
+           <td>1</td>
+           <td>Morgan Stanley 2017Full-time Winter Technology Analyst</td>
+           <td>Online application and hand-in resume</td>
+           <td>2016/09/25 <br> 2016/10/12</td>
+           <td>Fail, because I said graduation date will be Sept2017</td>
+         </tr>
+         <tr>
+           <td>2</td>
+           <td>Morgan Stanley 2017 Winter Internship </td>
+           <td>Online application and hand-in resume</td>
+           <td>2016/09/25 <br> 2016/10/12</td>
+           <td>First round:2016/10/22  MorganStanley Montreal Office <br> Second Feb 16th/2017 changed form
+                  winter to summer internship</td>
+         </tr>
+         <tr>
+           <td>3</td>
+           <td>Nuance Communication(Software Eng& QA Eng Internship)</td>
+           <td>TechFair Onsite</td>
+           <td>2016/09/28</td>
+           <td>1.Telephone call<br>2.Onsite Interview</td>
+         </tr>
+         <tr>
+           <td>4</td>
+           <td>Mi9 Retail Software Engineer</td>
+           <td>Online Indeed Website</td>
+           <td>2017/01/28</td>
+           <td>1.Online Test by email<br>2.Telephone call
+                <br> 3. In person interview 2017/02/24 Montreal Office</td>
+         </tr>
+         <tr>
+           <td>5</td>
+           <td>PartsAvatar.ca Java Developer Internship</td>
+           <td>Online Indeed Website</td>
+           <td>2017/01/27</td>
+           <td>1.Online Test by email</td>
+         </tr>
+         <tr>
+           <td>6</td>
+           <td>Amazon Software Development Engineer JOB ID:494200 Vancouver</td>
+           <td>www.amazon.jobs</td>
+           <td>2017/02/12</td>
+           <td>Online application&Techfair resume</td>
+         </tr>
+         <tr>
+           <td>7</td>
+           <td>Amazon Software Development EngineerII JOB ID:484551 Montreal</td>
+           <td>www.amazon.jobs</td>
+           <td>2017/02/12</td>
+           <td>Online application&Techfair resume<br> Requirements:OO Design and
+             Java Ruby, Or Python; Experience with distributed systems; Linear programming</td>
+         </tr>
+         <tr>
+            <td>8</td>
+            <td>Mi9 Retail Q&A Quality Assurance Engineer</td>
+            <td>indeed website</td>
+            <td>2017/02/22</td>
+            <td>Online Test by email</td>
+         </tr>
+         <tr>
+            <td>9</td>
+            <td>NAKISA Junior Software Developer</td>
+            <td>NAKISA website</td>
+            <td>2017/02/21</td>
+            <td>Unknown</td>
+         </tr>
+         <tr>
+           <td>10</td>
+           <td>Vigilant Front-end Developer intern</td>
+           <td>Vigilant website</td>
+           <td>2017/02/22</td>
+           <td>Unknown</td>
+         </tr>
+         <tr>
+           <td>11</td>
+           <td>Vigilant Test Automation Intern</td>
+           <td>Vigilant website</td>
+           <td>.....</td>
+           <td>Unknown</td>
+         </tr>
+       -->
+
+     </table>
+
+</div>
+
+<!-- <div class="side-slider">
+   <h3>Website of hunting jobs resource</h3>
+   <ul>
+      <li><a href="http://lintcode.com/"> Coding Website</a></li>
+      <li><a href="https://www.passwordbox.com/careers/"> passwordBox website</a></li>
+      <li><a href="https://www.workhoppers.com/en/">Freelance job workhoppers.com</a></li>
+      <li><a href="https://www.indeed.com/"> Indeed website resource</a></li>
+      <li><a href="http://blog.gainlo.co/"> Blog of Most recent interview questions</a></li>
+      <li><a href="http://www.geeksforgeeks.org/">A computer science's portal for geeks</a></li>
+   </ul>
+</div> -->
+</div>
+<div style="background-color:black color:white; padding:20px;">
+
+</div>
+ 
+</body>
+ 
+</html>
