@@ -1,11 +1,55 @@
-div:not(::before){
-  padding:10px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+  background-color: #f8f9f9;
+  color:#4a4a4a;
+  font-size: 14px;
+  font-family: Roboto,PingFang SC,Hiragino Sans GB,Microsoft Yahei,Microsoft Jhenghei,sans-serif;
+}
+
+div{
+  display: block;
+}
+
+nag-header{
+  height: 60px;
+  text-align: center;
+}
+/*--::before and ::after the effect over styling*/
+.nag-header::after{
+  clear: both;
 }
 
 .navigation-list {
   background-image: url("./images/workspace5.jpg");
   height: 500px;
   padding: 0px;
+}
+
+.navbar-brand{
+    height: 60px;
+    width: 250px;
+    display: block;
+    padding-left: 15px;
+    float: left;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.navbar-brand .navbar-brand-title{
+  background: url("./images/menu-icon.png") no-repeat;
+  background-size: contain;
+  background-position: 0;
+  font-size: 27px;
+  padding: 20px 10px 6px;
+  padding-left: 54px;
+  color: black;
+  display: inline-block;
 }
 
 .main-content{
