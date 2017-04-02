@@ -1,17 +1,141 @@
-div:not(::before){
-  padding:10px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.navigation-list {
-  background-image: url("./images/workspace5.jpg");
+html,body{
+  height: 100%;
+  background-color: #f8f9f9;
+  color:#4a4a4a;
+  font-size: 14px;
+  font-family: Roboto,PingFang SC,Hiragino Sans GB,Microsoft Yahei,Microsoft Jhenghei,sans-serif;
+}
+
+div{
+  display: block;
+}
+
+.main-navigation-list {
+  background-image: url("./images/workspace6.jpg");
   height: 500px;
-  padding: 0px;
+
+}
+
+.nag-header{
+  height: 60px;
+  text-align: center;
+}
+/*--::before and ::after the effect over styling*/
+.nag-header::after{
+  clear: both;
+}
+
+.navbar-brand{
+    height: 60px;
+    width: 250px;
+    display: block;
+    padding-left: 15px;
+    float: left;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.navbar-brand .navbar-brand-title{
+  background: url("./images/menu-icon.png") no-repeat;
+  background-size: contain;
+  background-position: 0;
+  font-size: 27px;
+  padding: 20px 10px 6px;
+  padding-left: 54px;
+  color: black;
+  display: inline-block;
+}
+.left-icon{
+  width: 25%;
+  height:  60px;
+  margin-right: 10px;
+  display: inline-block;
+  float: left;
+}
+
+.left-icon::after{
+  clear: both;
+}
+
+.right-menu-list{
+  width: 520px;
+  float: right;
+  display: inline-block;
+}
+
+.navbar-right{
+  float: right!important;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 10px;
+  height: 60px;
+  width: inherit;
+  font-size: 17px;
+  font-family: fantasy;
+}
+
+ul{
+  list-style-type: none;
+
+  float: right;
+}
+
+li{
+  cursor: pointer;
+  float: none;
+  margin-left: 8px;
+  margin-right: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border-color:#4a4a4a;
+  border-radius:2px;
+  border: 1px solid;
+  padding: 3px 18px 3px 18px;
+}
+
+a.navbar-menu-item{
+  text-decoration: none;
+}
+
+a.navbar-menu-item:link, a.navbar-menu-item:visited{
+  color: #4a4a4a;
+}
+
+a.navbar-menu-item:hover{
+  color: #ffffff;
+}
+
+li:link::after{
+  color: #4a4a4a;
+}
+
+li:hover{
+  background-color: #4a4a4a;
+  color: #ffffff;
+  border-color: #4a4a4a;
+  font-weight: bold;
+}
+
+
+.menu-list1 .menu-list2 .menu-list3
+.menu-list4{
+  float: right;
+  width: 120px;
+  text-align: center;
 }
 
 .main-content{
-     padding: 0px;
+     padding: 20px;
      width: auto;
      float:left;
+     height: 1000px;
 }
 
 .side-slider{
@@ -77,5 +201,21 @@ thead tr th{
   color: red;
   margin: 5px;
   display: none;
+}
+.full-body{
+  min-height: 1600px;
+  position: absolute;
+  top:0px;
+}
+/*================= display footer of website========================*/
+.nav-footer{
+   background-color: #4a4a4a;
+   height: 230px;
+   width: 100%;
+   position: absolute;
+   top: 1600px;
+}
 
+*, :after, :before{
+  box-sizing: border-box;
 }
